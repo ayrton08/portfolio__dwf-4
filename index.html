@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <title>Personal Page</title>
+        <link rel="stylesheet" href="./pages/styles/index.css" />
+        <link rel="stylesheet" href="./components/footer/footer.css" />
+        <link rel="stylesheet" href="./components/form/form.css" />
+        <link rel="stylesheet" href="./components/header/header.css" />
+        <script defer src="./components/header/header.js"></script>
+        <script defer src="./components/form/form.js"></script>
+        <script defer src="./components/footer/footer.js"></script>
+        <script defer src="./pages/scripts/index.js"></script>
+    </head>
+    <body>
+        <main class="main">
+            <template id="template-main">
+                <div class="contenedor-main">
+                    <h1 class="title">Welcome to my Site</h1>
+                </div>
+            </template>
+        </main>
+        <section class="first-section">
+            <div class="container-one">
+                <div class="uno">
+                    <h2 class="title-first-section">I'm Ayrton</h2>
+                    <p class="text-first-section">
+                        Algo interesante sobre mi Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Nulla dui quam,
+                        sollicitudin at enim id, sodales vehicula velit. Aenean
+                        lobortis posuere tristique. Phasellus placerat arcu
+                        elementum nisi ultrices cursus. Etiam sit amet aliquet
+                        lacus. Integer ut iaculis augue, sit amet tincidunt ex.
+                        In eleifend justo et sodales semper. Mauris nec tortor
+                        lectus. Curabitur nec ultricies dolor.
+                    </p>
+                </div>
+                <div class="dos">
+                    <img class="logo-first-section" />
+                </div>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="container-section-two">
+                <h2 class="title-section-two">My Services</h2>
+
+                <div class="services-section-two"></div>
+            </div>
+        </section>
+        <template id="portfolio-template">
+            <div class="service-one">
+                <img class="logo-section-two" />
+                <span class="sub-service"></span>
+                <p class="parrafo"></p>
+            </div>
+        </template>
+    </body>
+</html>

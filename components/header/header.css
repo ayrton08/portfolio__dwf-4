@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 17px;
+    background-color: aquamarine;
+}
+@media (min-width: 750px) {
+    .header {
+        height: 120px;
+    }
+}
+
+.izquierda {
+    width: 54px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .izquierda {
+        width: 119px;
+        height: 43px;
+    }
+}
+
+.logo-inicio {
+    width: 54px;
+    height: 50px;
+}
+
+@media (min-width: 750px) {
+    .logo-inicio {
+        width: 105px;
+        height: 109px;
+    }
+}
+
+.logo-opciones {
+    max-width: 54px;
+    max-height: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 750px) {
+    .logo-opciones {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        font-size: 24px;
+        width: 100%;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+}
