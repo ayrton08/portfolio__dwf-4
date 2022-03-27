@@ -24,22 +24,43 @@ function form(element) {
         </div>`;
 
     const form = componenteNodo.querySelector(".inputs-form");
-    
-    form.addEventListener("submit", (event) => {
-        console.log(event)
-        event.preventDefault();
-        console.log("el form se envio");
-    });
-    
-    const button = form.querySelector("button")
-    button.addEventListener("click", ( event ) => {
-        event.target.style.backgroundColor = "purple";
-        
-        setTimeout(function() {
-            event.target.style.backgroundColor = "#ffd953";
-          }, 80);
-        }, false)
-    
-    element.insertAdjacentElement("beforebegin", componenteNodo);
 
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = event.target.name.value;
+        const email = event.target.name.value;
+        const message = event.target.name.value;
+
+        // fetch(`https://apx-api.vercel.app/api/utils/dwf`, {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: {
+        //         to: "ayrtonjuarez90@gmail.com",
+        //         message: `Mis Datos: {
+        //         Nombre: ${name},
+        //         Email: ${email},
+        //         Message: ${message}
+        //     }`,
+        //     },
+        // })
+            
+    });
+
+    const button = form.querySelector("button");
+    button.addEventListener(
+        "click",
+        (event) => {
+            event.target.style.backgroundColor = "purple";
+
+            setTimeout(function () {
+                event.target.style.backgroundColor = "#ffd953";
+            }, 80);
+        },
+        false
+    );
+
+    element.insertAdjacentElement("beforebegin", componenteNodo);
 }

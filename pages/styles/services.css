@@ -1,0 +1,86 @@
+.second-section {
+    width: 100%;
+    height: 1375px;
+    background-color: white;
+}
+
+@media (min-width: 750px) {
+    .second-section {
+        height: 604px;
+    }
+}
+
+.container-section-two {
+    padding: 70px 52px;
+    height: 1375px;
+    display: grid;
+    justify-content: center;
+}
+
+@media (min-width: 750px) {
+    .container-section-two {
+        height: 604px;
+    }
+}
+
+.title-section-two {
+    font-size: 32px;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 55px;
+    justify-content: center;
+}
+
+@media (min-width: 750px) {
+    .title-section-two {
+        font-size: 48px;
+
+        width: 100%;
+    }
+}
+.services-section-two {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@media (min-width: 750px) {
+    .services-section-two {
+        display: flex;
+        height: 480px;
+        gap: 200px;
+    }
+}
+
+.service-one {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+.service-two {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+.service-three {
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+}
+
+.parrafo {
+    font-size: 16px;
+    text-align: center;
+}
+
+.sub-service {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-section-two {
+    width: 138px;
+    height: 128px;
+}

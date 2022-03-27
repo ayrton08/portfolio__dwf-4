@@ -27,7 +27,7 @@ function getDataHome() {
 }
 
 function addServiceCard(params = {}) {
-    const template = document.querySelector("#portfolio-template");
+    const template = document.querySelector("#service-template");
     const container = document.querySelector(".services-section-two");
 
     template.content.querySelector(".sub-service").textContent = params.title;
@@ -35,7 +35,7 @@ function addServiceCard(params = {}) {
     template.content.querySelector(".parrafo").textContent = params.description;
 
     template.content.querySelector(".logo-section-two").src = params.image;
-
+    
     const clone = document.importNode(template.content, true);
     container.appendChild(clone);
 }
@@ -49,10 +49,10 @@ function getDataService() {
         })
         .then((data) => {
             const fieldsCollection = data.items.map((item, index) => {
+                
                 return {
                     title: item.fields.title,
-                    description:
-                        item.fields.description.content[0].content[0].value,
+                    description: item.fields.description.content[0].content[0].value,
                     image: data.includes.Asset[0].fields.file.url,
                 };
             });
@@ -64,7 +64,7 @@ function getDataService() {
 function addDataFirstSection(params = {}) {
 
     const template = document.querySelector("#first-section__container");
-    
+
     const container = document.querySelector(".first-section");
 
     template.content.querySelector(".title-first-section").textContent =
@@ -89,14 +89,12 @@ function getDataFirstSection() {
         })
 
         .then((data) => {
-            console.log(data)
             const laData = data.items.map((item) => {
-                console.log(data.includes.Asset[0].fields.file.url)
                 return {
                     title: item.fields.title,
                     about_me: item.fields.aboutMe.content[0].content[0].value,
-                    picture: "https:" + data.includes.Asset[0].fields.file.url            
-                   };
+                    picture: "https:" + data.includes.Asset[0].fields.file.url
+                };
             });
             return laData;
         });
@@ -128,4 +126,5 @@ function getDataFirstSection() {
 
     const elementHeader = document.querySelector("main");
     header(elementHeader);
+
 })();

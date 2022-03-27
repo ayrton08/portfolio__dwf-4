@@ -8,10 +8,17 @@ function header(element) {
     </a>
 </div>
 <div class="derecha">
-<button class="abre-ventana">Open</button>
+<button class="abre-ventana">Menu
+</button>
 <div class="ventana">
     <button class="cierra-ventana">Close</button>
-    <div class="ventana-contenido">Contenido</div>
+    
+    <ul class="sections">
+            <a class="links" href="./portfolio.html">Portfolio</a>
+            <a class="links" href="/services.html">Servicios</a>
+            <a class="links" href="./contact.html">Contacto</a>
+        </ul>
+    
     
 </div>
     

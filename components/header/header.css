@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .header {
     display: flex;
 
@@ -79,7 +82,20 @@
     right: 20px;
 }
 
-.ventana-contenido {
-    margin-top: 40px;
+.sections {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
     color: #f2f3f4;
+}
+
+.links {
+    color: #f2f3f4;
+    padding: 20px;
+    font-size: 48px;
+    text-decoration: none;
 }
