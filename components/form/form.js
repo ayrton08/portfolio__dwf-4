@@ -25,11 +25,21 @@ function form(element) {
 
     const form = componenteNodo.querySelector(".inputs-form");
     
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", (event) => {
         console.log(event)
         event.preventDefault();
         console.log("el form se envio");
     });
-
+    
+    const button = form.querySelector("button")
+    button.addEventListener("click", ( event ) => {
+        event.target.style.backgroundColor = "purple";
+        
+        setTimeout(function() {
+            event.target.style.backgroundColor = "#ffd953";
+          }, 80);
+        }, false)
+    
     element.insertAdjacentElement("beforebegin", componenteNodo);
+
 }

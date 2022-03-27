@@ -15,10 +15,10 @@
         <link rel="stylesheet" href="./components/footer/footer.css" />
         <link rel="stylesheet" href="./components/form/form.css" />
         <link rel="stylesheet" href="./components/header/header.css" />
-        <script defer src="./components/header/header.js"></script>
-        <script defer src="./components/form/form.js"></script>
-        <script defer src="./components/footer/footer.js"></script>
-        <script defer src="./pages/scripts/index.js"></script>
+        <script async src="./components/header/header.js"></script>
+        <script async src="./components/form/form.js"></script>
+        <script async src="./components/footer/footer.js"></script>
+        <script async src="./pages/scripts/index.js"></script>
     </head>
     <body>
         <main class="main">
@@ -29,29 +29,15 @@
             </template>
         </main>
         <section class="first-section">
-            <div class="container-one">
-                <div class="uno">
-                    <h2 class="title-first-section">I'm Ayrton</h2>
-                    <p class="text-first-section">
-                        Algo interesante sobre mi Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla dui quam,
-                        sollicitudin at enim id, sodales vehicula velit. Aenean
-                        lobortis posuere tristique. Phasellus placerat arcu
-                        elementum nisi ultrices cursus. Etiam sit amet aliquet
-                        lacus. Integer ut iaculis augue, sit amet tincidunt ex.
-                        In eleifend justo et sodales semper. Mauris nec tortor
-                        lectus. Curabitur nec ultricies dolor.
-                    </p>
-                </div>
-                <div class="dos">
-                    <img class="logo-first-section" />
-                </div>
-            </div>
         </section>
+        <template id="first-section__container">
+                <h2 class="title-first-section">I'm Ayrton</h2>
+                <p class="text-first-section"></p>
+                <img class="logo-first-section" />
+        </template>
         <section class="second-section">
             <div class="container-section-two">
                 <h2 class="title-section-two">My Services</h2>
-
                 <div class="services-section-two"></div>
             </div>
         </section>
