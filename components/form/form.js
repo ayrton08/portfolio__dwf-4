@@ -2,7 +2,7 @@ function form(element) {
     const componenteNodo = document.createElement("section");
     componenteNodo.className = "form";
     componenteNodo.innerHTML = `
-    <div class="container-form">
+    <div class="container-form" >
     <h2 class="title-form">Write Me</h2>
     <form class="inputs-form">
         <div class="fieldset">
@@ -29,23 +29,29 @@ function form(element) {
         event.preventDefault();
 
         const name = event.target.name.value;
-        const email = event.target.name.value;
-        const message = event.target.name.value;
+        const email = event.target.email.value;
+        const message = event.target.message.value;
 
-        // fetch(`https://apx-api.vercel.app/api/utils/dwf`, {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: {
-        //         to: "ayrtonjuarez90@gmail.com",
-        //         message: `Mis Datos: {
-        //         Nombre: ${name},
-        //         Email: ${email},
-        //         Message: ${message}
-        //     }`,
-        //     },
-        // })
+        fetch(`https://apx-api.vercel.app/api/utils/dwf`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                to: "ayrtonjuarez90@gmail.com",
+                message: `Mis Datos: {
+                Nombre: ${name},
+                Email: ${email},
+                Message: ${message}
+            }`,
+            }),
+        }).then((res) => {
+            if(res.ok) {
+                form.reset()
+            } else {
+                alert("El formulario no se ha podido enviar")
+            }
+        })
             
     });
 

@@ -23,9 +23,10 @@ function header(element) {
 </div>
     
     <menu class="menu">
-        <div>About Me</div>
-        <div>Services</div>
-        <div>Write Me</div>
+    <a href="/portfolio.html" class="menu__links">Portfolio</a>
+    <a href="/services.html" class="menu__links">Services</a>
+    <a href="/contact.html" class="menu__links">Write Me</a>
+    
     </menu>
 </div>
    `;

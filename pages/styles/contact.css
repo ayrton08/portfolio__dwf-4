@@ -4,15 +4,15 @@
 
 body {
     margin: 0;
-}
-
-.header {
-    background-color: black;
+    background: linear-gradient(
+        107.17deg,
+        #408195 29.35%,
+        rgba(0, 210, 135, 0.8) 78.73%
+    );
 }
 
 .container-form {
     width: 100%;
-    background-color: black;
     display: grid;
     gap: 20px;
     min-height: 800px;
@@ -41,7 +41,7 @@ body {
 @media (min-width: 750px) {
     .title-form {
         font-size: 48px;
-        margin-top: 0;
+        margin-bottom: 470px;
     }
 }
 
@@ -70,7 +70,7 @@ body {
     font-size: 20px;
     display: block;
     width: 100%;
-    border-radius: 0;
+    border-radius: 3px;
     padding: 10px;
 }
 .textarea {
