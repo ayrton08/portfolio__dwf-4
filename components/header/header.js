@@ -8,8 +8,8 @@ function header(element) {
     </a>
 </div>
 <div class="derecha">
-<button class="abre-ventana">Menu
-</button>
+<button class="abre-ventana">☰</button>
+</div>
 <div class="ventana">
     <button class="cierra-ventana">Close</button>
     

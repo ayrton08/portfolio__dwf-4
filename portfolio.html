@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./components/header/header.css">
-    <link rel="stylesheet" href="./components/footer/footer.css">
-    <link rel="stylesheet" href="./pages/styles/portfolio.css">
-    <script defer src="./components/footer/footer.js"></script>
-    <script defer src="./components/header/header.js"></script>
-    <script defer src="./pages/scripts/portfolio.js"></script>
-</head>
-<body>
-    <section class="portfolio">
-        <div class="container">
-            <h2 class="title">Portfolio</h2>
-            <div class="works"></div>
-        </div>
-    </section>
-    <template id="portfolio-template">
-        <div class="work-card">
-            <img class="picture" />
-            <span class="subtitle"></span>
-            <p class="description"></p>
-        </div>
-    </template>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./components/header/header.css" />
+        <link rel="stylesheet" href="./components/footer/footer.css" />
+        <link rel="stylesheet" href="./pages/styles/portfolio.css" />
+        <script defer src="./components/footer/footer.js"></script>
+        <script defer src="./components/header/header.js"></script>
+        <script defer src="./pages/scripts/portfolio.js"></script>
+    </head>
+    <body>
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="title">Portfolio</h2>
+                <div class="works"></div>
+            </div>
+        </section>
+        <template id="portfolio-template">
+            <div class="work-card">
+                <img class="picture" />
+                <span class="subtitle"></span>
+                <p class="description"></p>
+            </div>
+        </template>
+    </body>
 </html>

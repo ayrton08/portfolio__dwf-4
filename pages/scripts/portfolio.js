@@ -9,6 +9,7 @@ function addDataPortfolio(params = {}) {
     template.content.querySelector(".description").textContent = params.description;
 
     const clone = document.importNode(template.content, true);
+    
     container.appendChild(clone);
 }
 
@@ -36,12 +37,8 @@ function getDataPortfolio() {
 
 
 
-
-
-
-
 (function () {
-    const elementHeader = document.querySelector("body");
+    const elementHeader = document.querySelector(".portfolio");
     header(elementHeader);
 
     const elementFooter = document.querySelector("body");
