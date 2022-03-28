@@ -8,24 +8,26 @@ function footer(element) {
             <div class="redes-footer">
             <a href="https://www.facebook.com/ayrton.juarez" target="_blank">
             <div class="redes-facebook">
-                <img
-                    class="logo-social"
-                    src="./components/footer/media/facebook-2429746_640.png"
-                    alt=""
-                />
-                <span class="name-redes">Facebook</span>
+            <img
+            class="logo-social"
+            src="./components/footer/media/facebook-2429746_640.png"
+            alt=""
+            />
+            <span class="name-redes">Facebook</span>
             </div>
             </a>
             
-
+            
+            <a href="https://www.linkedin.com/in/ayrton-juarez-8461a7234/" target="_blank">
                 <div class="redes-linkedin">
-                    <img
-                        class="logo-social"
-                        src="./components/footer/media/linked-in-2674741_640.png"
-                        alt=""
-                    />
-                    <span class="name-redes">LinkedIn</span>
+                <img
+                class="logo-social"
+                src="./components/footer/media/linked-in-2674741_640.png"
+                alt=""
+                />
+                <span class="name-redes">LinkedIn</span>
                 </div>
+            </a>
 
                 <a href="https://www.instagram.com/ayrtonjuarez/" target="_blank" >
                 <div class="redes-instagram">

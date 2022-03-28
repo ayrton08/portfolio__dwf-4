@@ -37,15 +37,11 @@
     font-size: 48px;
 }
 
-.text-logo-footer {
-    font-size: 13px;
-}
-
 .redes-footer {
     display: grid;
     align-items: center;
     gap: 10px;
-    padding-left: 140px;
+    padding-left: 120px;
     background-color: #dbdbdb;
 }
 
