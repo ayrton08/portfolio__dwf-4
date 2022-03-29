@@ -3,7 +3,7 @@ function header(element) {
     componenteNodo.className = "header";
     componenteNodo.innerHTML = `
     <div class="izquierda">
-    <a href="http://127.0.0.1:8080/">
+    <a href="./index.html">
     <img class="logo-inicio" src="./components/header/media/logo-footer.png" alt="" />
     </a>
 </div>
