@@ -14,9 +14,9 @@ function header(element) {
     <button class="cierra-ventana">Close</button>
     
     <ul class="sections">
-            <a class="links" href="/portfolio.html">Portfolio</a>
-            <a class="links" href="/services.html">Servicios</a>
-            <a class="links" href="/contact.html">Contacto</a>
+            <a class="links" href="portfolio.html">Portfolio</a>
+            <a class="links" href="services.html">Servicios</a>
+            <a class="links" href="contact.html">Contacto</a>
         </ul>
     
     
