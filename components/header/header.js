@@ -23,9 +23,9 @@ function header(element) {
 </div>
     
     <menu class="menu">
-    <a href="/portfolio.html" class="menu__links">Portfolio</a>
-    <a href="/services.html" class="menu__links">Services</a>
-    <a href="/contact.html" class="menu__links">Write Me</a>
+    <a href="./portfolio.html" class="menu__links">Portfolio</a>
+    <a href="./services.html" class="menu__links">Services</a>
+    <a href="./contact.html" class="menu__links">Write Me</a>
     
     </menu>
 </div>
