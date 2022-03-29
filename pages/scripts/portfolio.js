@@ -3,13 +3,20 @@ function addDataPortfolio(params = {}) {
     const container = document.querySelector(".works");
 
     template.content.querySelector(".subtitle").textContent = params.title;
-    
+
     template.content.querySelector(".picture").src = params.picture;
 
-    template.content.querySelector(".description").textContent = params.description;
+    template.content.querySelector(".description").textContent =
+        params.description;
+
+    template.content.querySelector(".url").textContent =
+        params.link;
+    
+    template.content.querySelector(".url").href =
+        params.url;
 
     const clone = document.importNode(template.content, true);
-    
+
     container.appendChild(clone);
 }
 
@@ -22,20 +29,21 @@ function getDataPortfolio() {
         })
 
         .then((data) => {
-            console.log(data); 
             const laData = data.items.map((item) => {
                 return {
                     title: item.fields.title,
-                    description: item.fields.description.content[0].content[0].value,
-                    picture: data.includes.Asset[0].fields.file.url
+                    description:
+                        item.fields.description.content[0].content[0].value,
+                    picture: data.includes.Asset[0].fields.file.url,
+                    url: item.fields.url,
+                    link: item.fields.url
+                
                 };
             });
+
             return laData;
         });
 }
-
-
-
 
 (function () {
     const elementHeader = document.querySelector(".portfolio");
@@ -44,12 +52,11 @@ function getDataPortfolio() {
     const elementFooter = document.querySelector("body");
     footer(elementFooter);
 
-    
-    
     getDataPortfolio().then((data) => {
         for (const c of data) {
             addDataPortfolio(c);
         }
     });
 
+    
 })();

@@ -141,6 +141,11 @@ body {
     min-height: 160px;
 }
 
+.url {
+    padding: 10px;
+    color: #f4d03f;
+}
+
 .footer {
     background-color: #2c2c2c;
 }
