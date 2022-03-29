@@ -48,7 +48,8 @@ body {
 .container {
     padding: 30px 52px;
     background-color: black;
-    height: 1375px;
+    height: 100%;
+    width: 100%;
     display: grid;
     gap: 50px;
     justify-content: center;
@@ -56,7 +57,7 @@ body {
 
 @media (min-width: 750px) {
     .container {
-        height: 604px;
+        height: 100%;
     }
 }
 
@@ -72,11 +73,23 @@ body {
 
 @media (min-width: 750px) {
     .title {
-        font-size: 48px;
+        display: none;
+    }
+}
 
+.title-desktop {
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .title-desktop {
+        display: flex;
+        padding: 0 0 70px 86px;
+        font-size: 48px;
         width: 100%;
     }
 }
+
 .works {
     display: grid;
     align-items: center;
@@ -86,18 +99,25 @@ body {
 
 @media (min-width: 750px) {
     .works {
-        display: flex;
-        height: 480px;
-        gap: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 150px;
+        row-gap: 50px;
     }
 }
 
 .work-card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #dc7633;
+    background-color: rgba(156, 0, 210, 0.7);
     border-radius: 5px;
+}
+
+@media (min-width: 750px) {
+    .work-card {
+        display: block;
+        width: 290px;
+        max-height: 500px;
+    }
 }
 
 .description {
@@ -115,10 +135,10 @@ body {
 }
 
 .picture {
-    width: 200px;
-    height: 160px;
-    border-radius: 5px;
-    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    min-height: 160px;
 }
 
 .footer {

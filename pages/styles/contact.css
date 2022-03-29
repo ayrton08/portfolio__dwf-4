@@ -4,11 +4,21 @@
 
 body {
     margin: 0;
-    background: linear-gradient(
-        107.17deg,
-        #408195 29.35%,
-        rgba(0, 210, 135, 0.8) 78.73%
-    );
+    background-color: black;
+}
+
+@media (min-width: 750px) {
+    body {
+        background: linear-gradient(
+            107.17deg,
+            #408195 29.35%,
+            rgba(0, 210, 135, 0.8) 78.73%
+        );
+    }
+}
+
+.menu__links {
+    font-family: "Poppins", sans-serif;
 }
 
 .container-form {

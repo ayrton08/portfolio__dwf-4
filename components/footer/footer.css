@@ -58,36 +58,36 @@
     }
 }
 
-.redes-footer a {
+.footer__links {
+    text-decoration: none;
+    color: #dbdbdb;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 200px;
 }
 
 .redes-facebook {
     display: flex;
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .redes-linkedin {
     display: flex;
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .redes-instagram {
     display: flex;
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .redes-github {
     display: flex;
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 100px;
+    max-height: 100px;
 }
-
 .name-redes {
-    padding-left: 5px;
+    padding-left: 10px;
     display: grid;
     align-items: center;
 }

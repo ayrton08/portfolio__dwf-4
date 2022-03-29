@@ -6,7 +6,8 @@ function footer(element) {
     <span class="marca" >Ayrton</span>
             </div>
             <div class="redes-footer">
-            <a href="https://www.facebook.com/ayrton.juarez" target="_blank">
+
+            <a class="footer__links" href="https://www.facebook.com/ayrton.juarez" target="_blank">
             <div class="redes-facebook">
             <img
             class="logo-social"
@@ -18,7 +19,7 @@ function footer(element) {
             </a>
             
             
-            <a href="https://www.linkedin.com/in/ayrton-juarez-8461a7234/" target="_blank">
+            <a class="footer__links" href="https://www.linkedin.com/in/ayrton-juarez-8461a7234/" target="_blank">
                 <div class="redes-linkedin">
                 <img
                 class="logo-social"
@@ -29,7 +30,7 @@ function footer(element) {
                 </div>
             </a>
 
-                <a href="https://www.instagram.com/ayrtonjuarez/" target="_blank" >
+                <a class="footer__links" href="https://www.instagram.com/ayrtonjuarez/" target="_blank" >
                 <div class="redes-instagram">
                     <img
                         class="logo-social"
@@ -40,7 +41,7 @@ function footer(element) {
                 </div>
                 </a>
 
-                <a href="https://github.com/ayrton08" target="_blank">
+                <a class="footer__links" href="https://github.com/ayrton08" target="_blank">
                 <div class="redes-github">
                     <img
                         class="logo-social"
